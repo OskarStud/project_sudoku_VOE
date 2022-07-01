@@ -18,14 +18,22 @@ function solve(boardString = arrString) {
 }
 
 
-
 /**
  * Принимает игровое поле в том формате, в котором его вернули из функции solve.
  * Возвращает булевое значение — решено это игровое поле или нет.
  */
-function isSolved(board) {
-
+function isSolved(arrString) {
+  arrString.forEach((el) => {
+    if(el === typeof(Number)) {
+      return true;
+    } else {
+      return false;
+    }
+  })
 }
+
+console.log(isSolved());
+
 
 /**
  * Принимает игровое поле в том формате, в котором его вернули из функции solve.
@@ -33,11 +41,11 @@ function isSolved(board) {
  * Подумай, как симпатичнее сформировать эту строку.
  */
 function prettyBoard(board) {
-  
+
 }
 
 
-console.log(solve('1-58-2----9--764-52--4--819-19--73-6762-83-9-----61-5---76---3-43--2-5-16--3-89---'));
+// console.log(solve('1-58-2----9--764-52--4--819-19--73-6762-83-9-----61-5---76---3-43--2-5-16--3-89---'));
 
 
 // Экспортировать функции для использования в другом файле (например, readAndSolve.js).
