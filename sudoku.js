@@ -20,7 +20,7 @@ function isSolved(board) {
  * Подумай, как симпатичнее сформировать эту строку.
  */
 function prettyBoard(board) {
-
+  console.log('hello');
 }
 
 // Экспортировать функции для использования в другом файле (например, readAndSolve.js).
