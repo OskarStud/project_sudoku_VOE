@@ -22,14 +22,11 @@ function solve(boardString = arrString) {
  * Принимает игровое поле в том формате, в котором его вернули из функции solve.
  * Возвращает булевое значение — решено это игровое поле или нет.
  */
-function isSolved(arrString) {
-  arrString.forEach((el) => {
-    if(el === typeof(Number)) {
-      return true;
-    } else {
-      return false;
-    }
-  })
+function isSolved(arrString, row, col, value) {
+  for (let i = 0; i < 9; i++) {
+    
+    
+  }
 }
 
 console.log(isSolved());
